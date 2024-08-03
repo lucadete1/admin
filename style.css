@@ -5,7 +5,7 @@
   --color-second:#FDBE33;
   --color-white:#fff;
   --color-body:#e4e9f7;
-  --color-light:#000000;
+  --color-light:#ffffff;
 }
 
 
@@ -30,6 +30,16 @@ body{
   position: fixed;
   top:0;
   left: 0;
+}
+
+ .logo{
+  border-radius: 100%;
+  width: 16%;
+  opacity: 0;
+}
+
+.sidebar.open .logo_details .logo{
+  opacity: 1;
 }
 
 .sidebar.open{
@@ -299,4 +309,20 @@ body{
 .sidebar.open ~ .home-section{
   left:250px;
   width: calc(100% - 250px);
+}
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover .card {
+  background-color: #f0f0f0; /* Changer la couleur de fond en hover */
+  transition: background-color 0.3s;
+}
+.card-link:hover .card-body i,
+.card-link:hover .card-body h5 {
+  color: rgb(241, 99, 17); /* Keep icons and text black on hover */
+}
+
+.card-body i, .card-body h5 {
+  color: black;
 }

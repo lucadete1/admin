@@ -20,4 +20,12 @@ window.onload = function(){
             closeBtn.classList.replace("bx-menu-alt-right","bx-menu")
         }
     }
+    document.getElementById('profileDropdown').addEventListener('click', function() {
+        var profileInfo = document.getElementById('profileInfo');
+        if (profileInfo.style.display === 'none') {
+          profileInfo.style.display = 'block';
+        } else {
+          profileInfo.style.display = 'none';
+        }
+      });
 }
